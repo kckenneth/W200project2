@@ -19,3 +19,4 @@ Answer?
 Big data finds its application to new product development. for example, use data to model a structure-activity relationship to decrease commercialization time.
 Data science is only just beginning to get into potential applications on unstructured data analysis, so that's an emerging area.
 Data science definitely is a growing area, its application is not well understood though. our companies are investing.
+
