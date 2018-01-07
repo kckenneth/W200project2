@@ -1,0 +1,21 @@
+GitHub Exercise
+
+This is a simple exercise designed to give you practice using GitHub. Additionally the following questions are meant to stimulate you to think about how innovation arises and propagates.
+Type your answers and commit them to your repository as outlined in the �Completing Your First Exercise With Git Reading Card� document.
+Be ready to share these answers <briefly> in the discussion section.
+
+* Bill Gates or Gary Kidall? Thomas Edison or Nicola Tesla? Rosalind Franklin or Watson and Crick? Steve(Jobs or Wozniak)?
+
+Answer?
+ Innovation normally don't arise from scratch, and not every innovation can propagate and make profits.
+ Gary Kildall is the creator of the landmark personal computer operating system CP/M. He brought the new idea, but CP/M didn't marketing very well and generate a huge profit.
+ While Bill Gates is more successful in these.
+
+
+* How might modern data science be disruptive to your industry?
+
+Answer?
+
+Big data finds its application to new product development. for example, use data to model a structure-activity relationship to decrease commercialization time.
+Data science is only just beginning to get into potential applications on unstructured data analysis, so that's an emerging area.
+Data science definitely is a growing area, its application is not well understood though. our companies are investing.
