@@ -1,3 +1,6 @@
+#!/path/to/interpreter	
+#!/usr/bin/env python
+
 price = float(input("Enter the price of a meal:"))
 
 tip = price * 0.16

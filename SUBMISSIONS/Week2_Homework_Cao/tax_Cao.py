@@ -1,3 +1,6 @@
+#!/path/to/interpreter	
+#!/usr/bin/env python
+
 income = int(input("Please enter your income:"))
 if income<=1000 and income>=0:
     tax=income*0.05
