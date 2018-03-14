@@ -17,18 +17,22 @@
 #---------------------------------------------------------------------------------------------------------------
 
 ## User Interface & user information input
-
-print("Welcome to Universal Studios Day Planner 1.0! Let's get started!  \n")
+print(" ###########################################################################")
+print(" #   Welcome to Universal Studios Day Planner 1.0!   Let's get started!    #")
+print(" ###########################################################################")
 plan_name = input("Please enter your plan name: ")      # input for plan name
 print()
 
 print("The park is open for 12 hours each day, and your budget for the day is $350.")
-print("You need to buy a park admission ticket: cost is $120.00")
+print("You need to buy a park admission ticket: cost is $120.00  \n")
 
 # Check if errors from plan name input
 while True:   
     try:
-        express_pass = int(input("Now decide if you want to buy a $80.00 express pass, Yes -- Enter 1, No -- Enter 2: "))
+        print("Now decide if you want to buy a $80.00 express pass:")
+        print("1--Yes")
+        print("2--No")
+        express_pass = int(input(":"))
         print()
         if express_pass in range(1,3): break
     except ValueError:
@@ -302,7 +306,7 @@ updated_budget = budget(express_pass).get_budget()
 print("Now your remaining budget is $", updated_budget)
 print()
 
-print("Now select your activities.")
+print("Now select your activities.\n")
 print_total_activities()
 
 # the list containting the selected activities
@@ -313,8 +317,12 @@ selected = []
 # There are error proof for the wrong type inputs.
 
 while True:
-    
-    command = input("Enter 's' to select, enter 'd' to delete, enter 'p' to check and print your selection list, enter 'q' to quit: ").lower()
+    print("Now select what you want to do by enter:")
+    print("s -- select")
+    print("d -- delete")
+    print("p -- check/print your selection list, total time, and remaining budget")
+    print("q -- quit")
+    command = input(":").lower()
     
     if command not in "s, d, p, q":
         print("Wrong Input -- PLEASE ENTER 's','d','p','q' EXACTLY, without quotes.")
@@ -325,7 +333,7 @@ while True:
     elif command == 's':
         while True:
             try:
-                selection = input("Enter your activity selection, enter 'q' to quit selection: ")
+                selection = input("Enter your activity selection, enter 'q' to quit selection \n: ")
                 
                 if selection == 'q':
                     break
@@ -348,9 +356,9 @@ while True:
                     
                     if all_activities[int(selection)] not in selected:
                         selected.append(all_activities[int(selection)])
-                        print("The selection has been added to your list.")
+                        print("The selection has been added to your list.\n")
                     else:
-                        print("The selection is already in your list.")
+                        print("The selection is already in your list.\n")
                     
             except:
                 print("Wrong Input -- Please enter 1 to 41 to select corresponding activitiy, enter 'q' to quit selection.")
@@ -360,7 +368,7 @@ while True:
     elif command == 'd':
         while True:
             try:
-                delete = input("Enter activity to delete, enter 'q' to quit deletion: ")
+                delete = input("Enter activity to delete, enter 'q' to quit deletion\n: ")
                 
                 if delete == 'q':
                     break
@@ -401,12 +409,14 @@ while True:
             print("\nWarning: out of money or out of time! updated your list.")
     
         print("\nThe total time needed for your selected activities is: ", total_time, "minutes, Max time is 720m")    
-        print("The remaining budget for your selected activities is: ${:.2f}".format(updated_budget))                
+        print("The remaining budget for your selected activities is: ${:.2f}".format(updated_budget)) 
+        print()
         
     elif command == 'q':
         break
 
-print()
-print("Thanks for using Universal Studios Day Planner 1.0! See you again soon!")
+print("###############################################################################")
+print("#   Thanks for using Universal Studios Day Planner 1.0! See you again soon!   #")
+print("###############################################################################")
 
 
